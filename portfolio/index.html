@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Playfair+Display&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body{
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* right: 0; */
+      }
+      body {
+        /* background-color: rgb(0, 0, 33); */
+        background-color: #eb117e;
+        /* background-color: #d31d78; */
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .left {
+        font-size: 2.2rem;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: #e76caa; */
+        background-color: #121212;
+        height: 80px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 27px;
+        padding: 6px;
+        font-size: 27px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        /* text-decoration: none; */
+        color: rgb(155, 155, 197);
+        font-size: 2.02rem;
+        /* background-color: rgb(140, 124, 124);
+    border-radius: 30px; */
+      }
+
+      /* //sectionone */
+      #firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 22px;
+        align-items: center;
+      }
+
+      #firstsection > div {
+        width: 25%;
+      }
+      .leftsection {
+        font-size: 2.8rem;
+      }
+
+      .rightsection img {
+        width: 23%;
+        position: absolute;
+        top: 18%;
+        right: 20%;
+      }
+
+      .purple {
+        color: rgb(67, 10, 117);
+      }
+
+      .leftsection::before {
+        content: "";
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        top: 80px;
+        background: url(img/watercolor-sugar-cotton-clouds-background_52683-80661.avif)no-repeat center center/cover;
+        opacity: 0.7;
+        left: 0;
+        opacity: 0.7;
+        right: 0;
+      }
+
+      .outerbox {
+        display: flex;
+      }
+      .outerbox a .imgbox1 {
+        text-decoration: none;
+        padding: 10px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        height: 60px;
+        width: 60px;
+      }
+      .outerbox a :hover {
+        box-shadow: 10px 10px #e371aa;
+        border-radius: 14px;
+      }
+
+      .imgbox1 img {
+        height: 56px;
+        position: absolute;
+        top: 71%;
+        left: 67%;
+      }
+      .imgbox2 img {
+        height: 56px;
+        position: absolute;
+        top: 71%;
+        left: 75%;
+      }
+      .imgbox3 img {
+        height: 56px;
+        position: absolute;
+        top: 71%;
+        left: 59%;
+      }
+
+      .heading1 {
+        position: absolute;
+        display: flex;
+        font-size: 3.2rem;
+        color: black;
+        /* align-items: center; */
+        right: 41%;
+        top: 82%;
+      }
+      .heading2 {
+        position: absolute;
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        /* align-items: center; */
+        right: 35%;
+        top: 93%;
+      }
+      .outside {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+        justify-content: center;
+        margin: 0px 29%;
+        top: 105%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+      }
+      .bx {
+        box-shadow: 0px 0px 3px 1px rgba(173, 216, 230, 0.3);
+        /* background-color: rgba(173, 216, 230, 0.1); */
+        background-color: rgba(202, 93, 162, 1.1);
+      }
+      .outside .bx img {
+        height: 130px;
+        width: 130px;
+      }
+      .center {
+        text-align: center;
+        color: black;
+        font-size: 22px;
+      }
+
+      #thirdsection {
+        /* padding: 63% 53% 25% 46%; */
+        padding: 9% 55% 30% 46%;
+        /* background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(4, 1, 27, 0.5),
+            rgba(0, 0, 0)
+          ),
+          url(./images/background1.jpg);
+        background-size: cover; */
+        /* max-width: 19px; */
+        margin-top: 64%;
+        height: 292px;
+      }
+      #thirdsection::before
+      {
+        content: "";
+        /* height: 205%; */
+        height: 139.7%;
+        width: 100%;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(4, 1, 27, 0.5),
+            rgba(0, 0, 0)
+          ),
+          url(./images/background1.jpg);
+          z-index: -1;
+          position: absolute;
+          top: 194%;
+          left: 0;
+          right: 0;
+      }
+
+      #thirdsection main {
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .heading3 {
+        position: absolute;
+        top: 200%;
+        text-align: center;
+        font-size: 3.2rem;
+      }
+
+    
+
+      .container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 278px;
+    width: 110px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+.container2
+{
+   display: flex;
+    /* flex-wrap: wrap; */
+    height: 278px;
+    width: 110px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 289%;
+}
+.container3
+{
+   display: flex;
+    /* flex-wrap: wrap; */
+    height: 278px;
+    width: 110px;
+    /* margin: auto; */
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 350%;
+}
+    
+.wrapper img {
+    height: 162px;
+    width: 162px;
+    /* border: 2px solid white; */
+    margin: 33px 74px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper
+{
+      text-align: center;
+    border: 2px solid black;
+    height: 351px;
+    margin: 0px 25px;
+    width: 370px;
+    background-color: rgba(32, 55, 97, 0.2);
+    /* background-color: rgba(114, 54, 26, 0.2);; */
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+}
+.tic-tac-toe
+{
+  text-align: center;
+}
+.gametic
+{
+  text-align: center;
+}
+.abc
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 0px;
+  font-size: 17px;
+}
+.code:hover
+{
+  cursor: pointer;
+  font-size: 19px;
+  color: #eb117e;
+}
+.code
+{
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  width: 30%;
+  margin: 0px 36px;
+
+}
+.demo
+{
+  background-color: pink;
+  border-radius: 30px;
+  color: black;
+  width: 30%;
+  margin: 0px 36px;
+}
+.demo:hover
+{
+  cursor: pointer;
+  font-size: 19px;
+  color: gray;
+}
+.col
+{
+  color:#ee72b0;
+}
+#fourthsection {
+    padding: 60px 0;
+   
+}
+#fourthsection::before
+{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 919px;
+  width: 100%;
+  background: url(img/pink-gb0f6080c4_1280.jpg)no-repeat center center/cover;
+  opacity: 0.6;
+   /* background: linear-gradient( 0deg, rgba(0, 0, 0), rgba(4, 1, 27, 0.5), rgba(0, 0, 0) ), url(./images/background4.jpg);
+    background-size: cover; */
+}
+
+.ach
+{
+  display: grid;
+  margin: 0px 5%; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10,1fr);
+  /* border: 2px solid black; */
+
+ }
+.date
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  padding: 0.5em;
+  color: wheat;
+  /* border: 2px solid black; */
+}
+.d1
+{
+  grid-area: 1/1/2/2;
+}
+.d2
+{
+  grid-area: 2/1/3/2;
+}
+.d3
+{
+  grid-area: 3/1/4/2;
+}
+.d4
+{
+  grid-area: 4/1/5/2;
+}
+.d5
+{
+  grid-area: 5/1/6/2;
+}
+.d6
+{
+  grid-area: 6/1/7/2;
+}
+.d7
+{
+  grid-area: 7/1/8/2;
+}
+.d8
+{
+  grid-area: 8/1/9/2;
+}
+.d9
+{
+  grid-area: 9/1/10/2;
+}
+.d10
+{
+  grid-area: 10/1/11/2;
+}
+
+.achieve
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.h-achieve
+{
+  font-family: cursive;
+  font-size: 2.0em;
+  color: rgb(47, 2, 17);
+}
+.ach p
+{
+  color: #e9dbe2;
+}
+.a1
+{
+  grid-area: 1/2/2/3;
+}
+.a2
+{
+  grid-area: 2/2/3/3;
+}
+.a3
+{
+  grid-area: 3/2/4/3;
+}
+.a4
+{
+  grid-area: 4/2/5/3;
+}
+.a5
+{
+  grid-area: 5/2/6/3;
+}
+.a6
+{
+  grid-area: 6/2/7/3;
+}
+.a7
+{
+  grid-area: 7/2/8/3;
+}
+.a8
+{
+  grid-area: 8/2/9/3;
+}
+.a9
+{
+  grid-area: 9/2/10/3;
+}
+.a10
+{
+  grid-area: 10/2/11/3;
+}
+#fourthsection .ach li
+{
+  padding: 12px;
+}
+.cen
+{
+  color: black;
+  font-size: 3.4rem;
+  text-align: center;
+  margin: 30px;
+  /* box-shadow: 10px 10px gray; */
+}
+
+#fifthsection
+{
+  height: 800px;
+  width: 100%;
+ /* background-color:  linear-gradient( to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0) 100% ); */
+  /* background-color: #e371aa; */
+}
+#fifthsection::before
+{
+  content: "";
+  z-index: -1;
+  height: 1019px;
+  width: 100%;
+  background:linear-gradient( to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0) 100% );
+  opacity: 0.7;
+  position: absolute;
+}
+.fifthh
+{
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+      margin: 29px 0px;
+    padding: 16px 0px;
+}
+
+form
+{
+  display: flex;
+  justify-content: center;
+}
+.mssgbx
+{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+  height: 400px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      margin: 20px 70px;
+      border-radius: 34px;
+      margin-top: 30px;
+  
+}
+input,textarea
+{
+  width: 60%;
+  border: none;
+  /* border-radius: 20px; */
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  min-width: 20em;
+  font-size: 1.6em;
+  outline: none;
+  margin-bottom: 70px;
+  /* border: 2px solid black; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: "Titillium Web", sans-serif
+}
+textarea
+{
+  height: 220px;
+}
+.butn
+{
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.butn:hover
+{
+
+  font-size: 26px;
+  color: gray;
+}
+.hr
+{
+  color: white;
+  height: 3px;
+  width: 90%;
+  margin: auto;
+  /* top: 0; */
+}
+.footer-container
+{
+  height: 200px;
+  width: 100%;
+  /* background: rgb(230, 69, 123); */
+  /* display: grid; */
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  
+}
+footer
+{
+  text-align: center;
+  justify-content: center;
+  margin: 12px 14px;
+  /* padding: 10px; */
+}
+footer .name
+{
+  margin: 10px 12px;
+  grid-area: 1/1/2/2;
+  color:white;
+  font-size: 1.4em;
+  
+}
+.footer-container img
+{
+  height: 40px;
+  width: 40px;
+}
+.footer-container a
+{
+  text-decoration: none;
+  margin: 12px 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 12px; */
+  /* margin: 12px 10px; */
+}
+.footer-container img:hover
+{
+  box-shadow: 6px 6px 10px gray;
+  border-radius: 12px;
+}
+.resu
+{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border: none;
+  border-radius: 20px;
+  color: white;
+  /* background-color: rgb(80, 5, 55); */
+  /* background-color: rgba(15, 51, 96, 0.6); */
+  background-color: rgba(68, 20, 50, 0.6);
+      margin: 5px 3px;
+    padding: 5px 14px;
+    font-size: 18 px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    justify-content: cente/r;
+    /* align-items: center; */
+    /* margin-top: 20px; */
+    /* display: flex; */
+    font-size: 23px;
+    color: #d3bcbc;
+  /* align-items: center; */
+  /* margin-top: 20px; */
+  /* display: flex; */
+}
+.res a{
+  text-decoration: none;
+  
+}
+.resu a
+{
+  display: flex;
+}
+.res img
+{
+  height: 35px;
+  /* width: 35px; */
+  padding-right: 13px;
+}
+main
+{
+  margin-right: 15px;
+  /* margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto; */
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Tulsi's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#firstsection">Home</a></li>
+            <li><a href="#secondsection">Skills</a></li>
+            <li><a href="#thirdsection">Projects</a></li>
+            <li><a href="#fourthsection">Achievements</a></li>
+            <li><a href="#fifthsection">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="firstsection">
+        <div class="leftsection">
+          Hi,I am <span class="purple">Tulsi Bansal</span>
+          <div>and I am a passionate</div>
+          <div class="purple">Frontend Web Developer</div>
+          <!-- <span id="element"></span> -->
+          <div class="res">
+            <a href="Resume_Tulsi_Bansal (1).pdf" target="_blank">
+              <button class="resu"><img src="img/download.png" alt="">Resume</button></div>
+            </a>
+            
+        </div>
+        <div class="rightsection">
+          <img src="img/gamer.png" alt="" />
+        </div>
+        <div class="outerbox">
+          <div class="box">
+            <a href="https://www.linkedin.com/in/tulsi-bansal-101490222" class="imgbox1" target="_blank"
+              ><img src="img/linkedin.png" alt=""
+            /></a>
+          </div>
+          <div class="box">
+            <a href="https://www.instagram.com/invites/contact/?i=t6zv8ggj8raj&utm_content=fx4gqpw" class="imgbox2" target="_blank"
+              ><img src="img/instagram (1).png" alt=""
+            /></a>
+          </div>
+          <div class="box">
+            <a href="https://github.com/tulsi20bansal" class="imgbox3" target="_blank"
+              ><img src="img/github.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="secondsection">
+        <h1 class="heading1">My Skills</h1>
+        <div class="h2"><h3 class="heading2">What All I Have Learnt</h3></div>
+        <div class="outside">
+          <!-- <div class="bx">
+
+            </div> -->
+          <div class="bx">
+            <p><img src="img/C.svg" alt="" /></p>
+            <p class="center">C</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/css.svg" alt="" /></p>
+            <p class="center">CSS</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/github.svg" alt="" /></p>
+            <p class="center">GitHub</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/html.svg" alt="" /></p>
+            <p class="center">HTML</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/java.svg" alt="" /></p>
+            <p class="center">JAVA</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/javascript.svg" alt="" /></p>
+            <p class="center">JavaScript</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/linux.svg" alt="" /></p>
+            <p class="center">Linux</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/c++.svg" alt="" /></p>
+            <p class="center">C++</p>
+          </div>
+          <div class="bx">
+            <p><img src="img/sql.svg" alt="" /></p>
+            <p class="center">MySQL</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="thirdsection">
+        <main>
+          <h1 class="heading3">PROJECTS</h1>
+
+          <div class="container">
+            <div class="wrapper"><img src="img/tic-tac-toe.png" alt="">
+            <h1 class="tic-tac-toe">Tic-Tac-Toe Game</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+              <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div>
+             
+            </div>
+            <div class="wrapper"><img src="img/dragon.png" alt="">
+            <h1 class="tic-tac-toe">Dragon Game</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+            <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div></div>
+            <div class="wrapper" class="tic-tac-toe"><img src="img/snake.png" alt="">
+            <h1>Snake Game</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+            <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div></div>
+
+          </div>
+           <div class="container2">
+            <div class="wrapper"><img src="img/fast-food.png" alt="">
+            <h1 class="tic-tac-toe">Responsive Food Website</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+              <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div>
+            </div>
+            <div class="wrapper"><img src="img/diamond.png" alt="">
+            <h1 class="tic-tac-toe">Responsive Jewellery Website</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+            <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div></div>
+            <div class="wrapper" class="tic-tac-toe"><img src="img/calculate.png" alt="">
+            <h1>Calculator</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+            <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div></div>
+
+          </div>
+          </div>
+           <!-- <div class="container3">
+            <div class="wrapper"><img src="img/tic-tac-toe.png" alt="">
+            <h1 class="tic-tac-toe">Tic-Tac-Toe Game</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+              <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div>
+            </div>
+            <div class="wrapper"><img src="img/dragon.png" alt="">
+            <h1 class="tic-tac-toe">Dragon Game</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+            <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div></div>
+            <div class="wrapper" class="tic-tac-toe"><img src="img/snake.png" alt="">
+            <h1>Snake Game</h1>
+              <p class="gametic col">Game made using HTML,CSS and javascript</p>
+            <div class="abc">
+                 <div class="code">Code</div>
+              <div class="demo">Demo</div>
+              </div></div> -->
+
+          </div>
+          </div>
+        </main>
+      </section>
+
+      <section id="fourthsection">
+        <h1 class="cen">Achievements</h1>
+        <div class="ach">
+          <div class="date d1"><!--Won first prize in only girls hackathon</a>-->Nov 2022</div>
+          <div class="date d2"> <!--<a href="https://www.hackerrank.com/tulsi1457_be21 ">5 star hackerrank</a>-->Sep 2022 </div>
+          <div class="date d3"><!--<a href="certificate.codingninjas.com/verify/7f674eaa20bc9bef">Python certificate of excellence</a>-->March 2022</div>
+         <div class="date d4"><!--<a href="certificate.codingninjas.com/verify/61c992ff94353f4e">Introduction to java certificate of excellence</a>-->July 2023</div>
+          <div class="date d5"><!--<a href="certificate.codingninjas.com/verify/a4076d7167f88a5b">Advanced Web Development course from coding ninjas</a>-->August 2022</div>
+          <div class="date d6"><!--<a href="certificate.codingninjas.com/verify/ec475937ea9eb832">C++ certificate of completion</a>-->September 2022</div>
+          <div class="date d7"><!--<a href="file:///C:/Users/HP/Desktop/certificates/Course_Certificate.pdf"> Participation certificate in MLH sudans tech hackathon</a>-->September 2022</div>
+          <div class="date d8"><!--<a href="abc">Wrote 1 research paper</a>-->December 2022</div>
+          <div class="date d9"><!--<a href="smms">Google Analytics for Beginners</a>-->April 2022</div>
+          <div class="date d10"><!--<a href="kdl">Appreciation certificate from DEVTOWN</a>-->July 2023</div> 
+        
+        <div class="achieve a1">
+          <div class="h-achieve">1. Girls hackathon</div><p>Won first prize in only girls hackathon</p>
+        </div>
+        <div class="achieve a2">
+          <div class="h-achieve">2. Hackerrank</div><p>5 star hackerrank in C++</p>
+        </div>
+        <div class="achieve a3">
+          <div class="h-achieve">3. Python certificate</div><p>Coding Ninjas Phython Certification of excellence</p>
+        </div>
+        <div class="achieve a4">
+          <div class="h-achieve">4. Java certificate</div><p>Coding Ninjas Java Certification of excellence</p>
+        </div>
+        <div class="achieve a5">
+          <div class="h-achieve">5. Advanced Web Development course</div><p>Coding Ninjas Advanced Web Development course</p>
+        </div>
+        <div class="achieve a6">
+          <div class="h-achieve">6. C++ Certification</div><p>Coding Ninjas C++ Certification</p>
+        </div>
+        <div class="achieve a7">
+          <div class="h-achieve">7. Sudans tech hackathon</div><p>Participation certificate in MLH sudans tech hackathon</p>
+        </div>
+        <div class="achieve a8">
+          <div class="h-achieve">8. Research Paper</div>Wrote 1 research paper</p>
+        </div>
+        <div class="achieve a9">
+          <div class="h-achieve">9. Google Analytics course</div><p>Google Analytics for Beginners</p>
+        </div>
+        <div class="achieve a10">
+          <div class="h-achieve">10. DEVTOWN certificate</div><p>Appreciation certificate from DEVTOWN</p>
+        </div>
+         
+      </section>
+
+      <section id="fifthsection">
+        <h1 class="fifthh">Let's Work Together</h1>
+        <main>
+          <form action="">
+            <div class="mssgbx">
+              <input type="text" placeholder="Full Name:-" name="Name">
+              <input type="email" placeholder="E-mail:-" name="E-mail">
+              <textarea name="your mssg" id="mssg" cols="30" rows="10" placeholder="Your Message:-"></textarea>
+              <button type="button" class="butn">SUBMIT</button>
+            </div>
+          </form>
+        </main>
+      </section>
+      <div class="hr"><hr></div>
+      <div class="footer-container">
+        <footer>
+          <div class="name">Tulsi Bansal</div>
+          <div class="name">Chitkara University</div>
+          <p>Chandigarh-Patiala National Highway(NH-64)</p>
+          <p> Village Jansla, Rajpura, Punjab 140401</p>
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><img src="img/mail.png" alt="">MAIL</a>
+
+         
+        </footer>
+      </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Grapghic</i> Designer.", "&amp; a video editor."],
+        typeSpeed: 50,
+      });
+    </script> -->
+  </body>
+</html>
